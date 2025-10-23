@@ -1,23 +1,8 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, Mail, Phone, MapPin } from "lucide-react";
+import { GraduationCap, Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useState } from "react";
-import { toast } from "@/hooks/use-toast";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-
-  const handleNewsletterSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      toast({
-        title: "Obrigado por se inscrever!",
-        description: "Você receberá nossas novidades em breve.",
-      });
-      setEmail("");
-    }
-  };
 
   return (
     <footer className="bg-primary text-primary-foreground mt-20">
@@ -75,25 +60,43 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Redes Sociais */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Newsletter</h3>
+            <h3 className="font-semibold text-lg mb-4">Redes Sociais</h3>
             <p className="text-sm text-primary-foreground/80 mb-4">
-              Receba novidades e promoções exclusivas.
+              Siga-nos nas redes sociais e fique por dentro das novidades!
             </p>
-            <form onSubmit={handleNewsletterSubmit} className="space-y-2">
-              <Input
-                type="email"
-                placeholder="Seu e-mail"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/50"
-                required
-              />
-              <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white">
-                Inscrever-se
-              </Button>
-            </form>
+            <div className="flex gap-4">
+              <a
+                href="https://www.instagram.com/compuwayregistro?igsh=dGQ0cTF3ZW52YzUx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-all hover:scale-110"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-6 w-6" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@compuway_registro?_t=ZM-90mAoYC9aaB&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-all hover:scale-110"
+                aria-label="TikTok"
+              >
+                <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/share/1AAn7Rf8Ys/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-all hover:scale-110"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-6 w-6" />
+              </a>
+            </div>
           </div>
         </div>
 
