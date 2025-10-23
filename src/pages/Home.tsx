@@ -6,6 +6,9 @@ import Hero from "@/components/Hero";
 import CourseCard from "@/components/CourseCard";
 import { courses } from "@/data/courses";
 import { Star, Users, Award, TrendingUp } from "lucide-react";
+import testimonialMaria from "@/assets/testimonial-maria.jpg";
+import testimonialJoao from "@/assets/testimonial-joao.jpg";
+import testimonialAna from "@/assets/testimonial-ana.jpg";
 
 const Home = () => {
   const featuredCourses = courses.filter(course => course.featured);
@@ -121,8 +124,17 @@ const Home = () => {
                   "Os cursos da CursoPro mudaram minha vida profissional. Consegui uma promoção 
                   depois de aplicar o que aprendi!"
                 </p>
-                <div className="font-semibold">Maria Silva</div>
-                <div className="text-sm text-muted-foreground">Marketing Digital</div>
+                <div className="flex items-center gap-3 mt-4">
+                  <img 
+                    src={testimonialMaria} 
+                    alt="Maria Silva" 
+                    className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
+                  />
+                  <div>
+                    <div className="font-semibold">Maria Silva</div>
+                    <div className="text-sm text-muted-foreground">Marketing Digital</div>
+                  </div>
+                </div>
               </div>
 
               <div className="bg-card p-6 rounded-lg shadow-[var(--shadow-card)]">
@@ -135,8 +147,17 @@ const Home = () => {
                   "Conteúdo de altíssima qualidade e professores excelentes. 
                   Recomendo para todos que querem crescer profissionalmente."
                 </p>
-                <div className="font-semibold">João Santos</div>
-                <div className="text-sm text-muted-foreground">Desenvolvimento Web</div>
+                <div className="flex items-center gap-3 mt-4">
+                  <img 
+                    src={testimonialJoao} 
+                    alt="João Santos" 
+                    className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
+                  />
+                  <div>
+                    <div className="font-semibold">João Santos</div>
+                    <div className="text-sm text-muted-foreground">Desenvolvimento Web</div>
+                  </div>
+                </div>
               </div>
 
               <div className="bg-card p-6 rounded-lg shadow-[var(--shadow-card)]">
@@ -149,8 +170,17 @@ const Home = () => {
                   "Investimento que vale muito a pena! Os certificados ajudaram 
                   muito no meu currículo."
                 </p>
-                <div className="font-semibold">Ana Costa</div>
-                <div className="text-sm text-muted-foreground">Design Gráfico</div>
+                <div className="flex items-center gap-3 mt-4">
+                  <img 
+                    src={testimonialAna} 
+                    alt="Ana Costa" 
+                    className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
+                  />
+                  <div>
+                    <div className="font-semibold">Ana Costa</div>
+                    <div className="text-sm text-muted-foreground">Design Gráfico</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
