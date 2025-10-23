@@ -18,12 +18,14 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Transforme Sua Carreira com{" "}
-            <span className="text-accent">117 Cursos Online</span>
+            CHEGA DE ANSIEDADE. A HORA DE CONQUISTAR A VIDA QUE VOCÊ MERECE É{" "}
+            <span className="text-accent">AGORA.</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
-            Aprenda no seu ritmo com os melhores cursos online. Do básico ao avançado, 
-            temos o conteúdo perfeito para impulsionar sua carreira profissional.
+          <p className="text-lg md:text-xl text-white/90 mb-6 leading-relaxed">
+            Estes 117 cursos são o atalho validado para transformar seu futuro financeiro e pessoal em tempo recorde. Não perca mais um dia estagnado.
+          </p>
+          <p className="text-sm md:text-base text-accent font-semibold mb-4 animate-pulse">
+            Últimas vagas em destaque - Comece a colher os resultados hoje!
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/cursos">
