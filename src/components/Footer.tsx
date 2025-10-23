@@ -51,11 +51,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-sm text-primary-foreground/80">
                 <Phone className="h-4 w-4" />
-                (11) 99999-9999
+                (13) 3821-1229
               </li>
               <li className="flex items-center gap-2 text-sm text-primary-foreground/80">
                 <MapPin className="h-4 w-4" />
-                São Paulo, Brasil
+                R. Pres. Getúlio Vargas, 528 - Centro, Registro - SP, 11900-000
               </li>
             </ul>
           </div>

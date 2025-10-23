@@ -126,7 +126,7 @@ const Contato = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Telefone</h3>
-                      <p className="text-muted-foreground">(11) 99999-9999</p>
+                      <p className="text-muted-foreground">(13) 3821-1229</p>
                       <p className="text-sm text-muted-foreground mt-1">
                         Seg-Sex: 9h às 18h
                       </p>
@@ -141,7 +141,7 @@ const Contato = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Localização</h3>
-                      <p className="text-muted-foreground">São Paulo, Brasil</p>
+                      <p className="text-muted-foreground">R. Pres. Getúlio Vargas, 528 - Centro, Registro - SP, 11900-000</p>
                       <p className="text-sm text-muted-foreground mt-1">
                         Atendimento 100% online
                       </p>
