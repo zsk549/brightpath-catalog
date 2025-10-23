@@ -128,7 +128,10 @@ const Contato = () => {
                       <h3 className="font-semibold mb-1">Telefone</h3>
                       <p className="text-muted-foreground">(13) 3821-1229</p>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Seg-Sex: 9h às 18h
+                        Seg-Sex: 9h às 20h
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        Sab: 8h às 16h
                       </p>
                     </div>
                   </div>
