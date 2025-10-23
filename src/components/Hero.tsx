@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-image.jpg";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   return (
     <section className="relative overflow-hidden">
       <div 
-        className="absolute inset-0 z-0 opacity-10"
+        className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url(${heroImage})`,
+          backgroundImage: `url(${heroBackground})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       />
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary via-primary/95 to-primary/80" />
+      <div className="absolute inset-0 z-0 bg-primary/70" />
       
       <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
         <div className="max-w-3xl">
