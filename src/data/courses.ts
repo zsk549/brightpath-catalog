@@ -25,7 +25,6 @@ export const categories = [
 
 export const courses: Course[] = Array.from({ length: 117 }, (_, i) => {
   const categoryIndex = i % categories.length;
-  const priceOptions = [97, 147, 197, 247, 297, 347, 397, 497];
   const courseNumber = i + 1;
   
   return {
@@ -33,7 +32,7 @@ export const courses: Course[] = Array.from({ length: 117 }, (_, i) => {
     title: `Curso Profissional de ${categories[categoryIndex]} ${Math.floor(i / categories.length) + 1}`,
     category: categories[categoryIndex],
     description: `Aprenda tudo sobre ${categories[categoryIndex]} do básico ao avançado com metodologia comprovada e certificado incluso.`,
-    price: priceOptions[i % priceOptions.length],
+    price: 19.90,
     image: `https://images.unsplash.com/photo-${1500000000000 + i * 1000000}?w=800&h=600&fit=crop`,
     hotmartLink: `https://pay.hotmart.com/SEU_PRODUTO_${courseNumber}`,
     featured: i < 8,

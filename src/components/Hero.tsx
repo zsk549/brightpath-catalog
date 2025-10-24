@@ -21,8 +21,11 @@ const Hero = () => {
             CHEGA DE ANSIEDADE. A HORA DE CONQUISTAR A VIDA QUE VOCÊ MERECE É{" "}
             <span className="text-accent">AGORA.</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-6 leading-relaxed">
+          <p className="text-lg md:text-xl text-white/90 mb-4 leading-relaxed">
             Estes 117 cursos são o atalho validado para transformar seu futuro financeiro e pessoal em tempo recorde. Não perca mais um dia estagnado.
+          </p>
+          <p className="text-xl md:text-2xl font-bold text-white mb-6">
+            Cada curso por <span className="text-accent text-2xl md:text-3xl">APENAS R$ 19,90!</span>
           </p>
           <p className="text-sm md:text-base text-accent font-semibold mb-4 animate-pulse">
             Últimas vagas em destaque - Comece a colher os resultados hoje!
