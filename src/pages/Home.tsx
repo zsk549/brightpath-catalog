@@ -5,10 +5,11 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import CourseCard from "@/components/CourseCard";
 import { courses } from "@/data/courses";
-import { Star, Users, Award, TrendingUp } from "lucide-react";
+import { Star, Users, Award, TrendingUp, Play } from "lucide-react";
 import testimonialMaria from "@/assets/testimonial-maria.jpg";
 import testimonialJoao from "@/assets/testimonial-joao.jpg";
 import testimonialAna from "@/assets/testimonial-ana.jpg";
+import videoThumbnail from "@/assets/video-thumbnail.jpg";
 
 const Home = () => {
   const featuredCourses = courses.filter(course => course.featured);
@@ -19,6 +20,45 @@ const Home = () => {
       
       <main className="flex-1">
         <Hero />
+
+        {/* Vídeo de Apresentação */}
+        <section className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Sua Jornada de Transformação Começa Aqui!
+              </h2>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              {/* Video Player Placeholder */}
+              <div className="relative aspect-video rounded-lg overflow-hidden shadow-[var(--shadow-elegant)] mb-6 group cursor-pointer">
+                <img 
+                  src={videoThumbnail} 
+                  alt="Vídeo de apresentação" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                  <div className="w-20 h-20 rounded-full bg-accent flex items-center justify-center shadow-[var(--shadow-glow)] group-hover:scale-110 transition-transform">
+                    <Play className="h-10 w-10 text-white fill-white ml-1" />
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-center text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
+                Assista a este vídeo para descobrir como você pode acelerar seus resultados e alcançar o sucesso que sempre sonhou com nossos 117 cursos exclusivos.
+              </p>
+
+              <div className="text-center">
+                <Link to="/cursos">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-semibold">
+                    COMEÇAR MINHA TRANSFORMAÇÃO AGORA
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Cursos em Destaque */}
         <section className="py-16 bg-secondary/30">
