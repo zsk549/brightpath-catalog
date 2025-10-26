@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import Cursos from "./pages/Cursos";
 import DetalhesCurso from "./pages/DetalhesCurso";
 import Contato from "./pages/Contato";
+import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
+import PoliticaTroca from "./pages/PoliticaTroca";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/cursos" element={<Cursos />} />
           <Route path="/curso/:id" element={<DetalhesCurso />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
+          <Route path="/politica-troca" element={<PoliticaTroca />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

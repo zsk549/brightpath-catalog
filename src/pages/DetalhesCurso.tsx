@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { courses } from "@/data/courses";
-import { CheckCircle, Clock, Award, ArrowLeft } from "lucide-react";
+import { CheckCircle, Clock, Award, ArrowLeft, Shield, RefreshCw } from "lucide-react";
 
 const DetalhesCurso = () => {
   const { id } = useParams();
@@ -114,6 +114,34 @@ const DetalhesCurso = () => {
                     Comprar Agora
                   </Button>
                 </a>
+
+                {/* Avisos de Segurança e Garantia */}
+                <div className="bg-muted/30 rounded-lg p-4 mb-4 space-y-3 border border-muted">
+                  <div className="flex items-start gap-3">
+                    <Shield className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <div className="text-sm">
+                      <p className="font-medium text-foreground">Compra 100% segura</p>
+                      <p className="text-muted-foreground">
+                        Seus dados estão protegidos pela{" "}
+                        <Link to="/politica-privacidade" className="text-primary hover:underline">
+                          LGPD
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <RefreshCw className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <div className="text-sm">
+                      <p className="font-medium text-foreground">Garantia de 7 dias</p>
+                      <p className="text-muted-foreground">
+                        Direito de arrependimento{" "}
+                        <Link to="/politica-troca" className="text-primary hover:underline">
+                          (CDC)
+                        </Link>
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
                 <div className="space-y-4 text-sm">
                   <div className="flex items-center gap-3">
