@@ -121,6 +121,26 @@ get_header(); ?>
                                 </a>
                             <?php endif; ?>
 
+                            <!-- Avisos de Segurança LGPD/CDC -->
+                            <div class="security-notices" style="margin-top: 1rem; padding: 1rem; background: rgba(34, 197, 94, 0.1); border-radius: var(--radius); border: 1px solid rgba(34, 197, 94, 0.2);">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                                    <svg width="16" height="16" fill="#22c55e" viewBox="0 0 24 24">
+                                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                                    </svg>
+                                    <span style="font-size: 0.875rem; color: #22c55e; font-weight: 500;">
+                                        <a href="<?php echo home_url('/politica-privacidade'); ?>" style="color: #22c55e; text-decoration: underline;">Compra 100% segura (LGPD)</a>
+                                    </span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <svg width="16" height="16" fill="#22c55e" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                    <span style="font-size: 0.875rem; color: #22c55e; font-weight: 500;">
+                                        <a href="<?php echo home_url('/politica-troca'); ?>" style="color: #22c55e; text-decoration: underline;">Garantia de 7 dias (CDC)</a>
+                                    </span>
+                                </div>
+                            </div>
+
                             <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.875rem;">
                                 <div style="display: flex; align-items: center; gap: 0.75rem;">
                                     <svg width="20" height="20" fill="var(--color-text-light)" viewBox="0 0 24 24">

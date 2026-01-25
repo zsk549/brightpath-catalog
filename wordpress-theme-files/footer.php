@@ -83,8 +83,21 @@
             </div>
         </div>
 
+        <!-- Informações Legais -->
+        <div class="footer-legal">
+            <h3>Informações Legais</h3>
+            <ul>
+                <li><a href="<?php echo home_url('/politica-privacidade'); ?>">Política de Privacidade</a></li>
+                <li><a href="<?php echo home_url('/politica-troca'); ?>">Política de Troca e Devolução</a></li>
+            </ul>
+        </div>
+
         <div class="footer-bottom">
             <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. Todos os direitos reservados.</p>
+            <p style="font-size: 0.75rem; margin-top: 0.5rem;">
+                <a href="<?php echo home_url('/politica-privacidade'); ?>" style="margin-right: 1rem;">Política de Privacidade</a>
+                <a href="<?php echo home_url('/politica-troca'); ?>">Política de Troca e Devolução</a>
+            </p>
         </div>
     </div>
 </footer>

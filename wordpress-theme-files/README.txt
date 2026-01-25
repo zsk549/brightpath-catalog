@@ -1,6 +1,6 @@
 === CursoPro - Tema WordPress para Cursos Online ===
 
-Versão: 1.0
+Versão: 1.1
 Autor: CursoPro Team
 Requer pelo menos: WordPress 5.0
 Testado até: WordPress 6.4
@@ -24,6 +24,9 @@ CursoPro é um tema WordPress moderno e profissional, desenvolvido especificamen
 * Newsletter no rodapé
 * SEO otimizado
 * Menu mobile responsivo
+* **NOVO: Conformidade LGPD e CDC**
+* **NOVO: Páginas de Políticas Legais**
+* **NOVO: Avisos de Segurança nas páginas de curso**
 
 == Instalação ==
 
@@ -34,11 +37,19 @@ CursoPro é um tema WordPress moderno e profissional, desenvolvido especificamen
 
 2. CONFIGURAÇÃO INICIAL:
 
-   a) Criar Páginas:
+   a) Criar Páginas Básicas:
       - Crie uma página chamada "Contato"
       - Selecione o template "Contato" nas configurações da página
       
-   b) Configurar Menus:
+   b) Criar Páginas Legais (IMPORTANTE para conformidade):
+      - Crie uma página "Política de Privacidade"
+        * Slug: politica-privacidade
+        * Template: Política de Privacidade
+      - Crie uma página "Política de Troca e Devolução"
+        * Slug: politica-troca
+        * Template: Política de Troca e Devolução
+      
+   c) Configurar Menus:
       - Vá em Aparência > Menus
       - Crie um menu e adicione:
         * Página Inicial (link para home)
@@ -46,7 +57,7 @@ CursoPro é um tema WordPress moderno e profissional, desenvolvido especificamen
         * Contato (página criada)
       - Atribua ao "Menu Principal"
 
-   c) Configurar Widgets (Opcional):
+   d) Configurar Widgets (Opcional):
       - Aparência > Widgets
       - Configure as 4 áreas do rodapé
 
@@ -105,6 +116,31 @@ CursoPro é um tema WordPress moderno e profissional, desenvolvido especificamen
 * archive-course.php - Catálogo completo de cursos com filtros
 * single-course.php - Página de detalhes do curso
 * page-contato.php - Página de contato (Template)
+* page-politica-privacidade.php - Política de Privacidade (LGPD)
+* page-politica-troca.php - Política de Troca e Devolução (CDC)
+
+== Conformidade Legal (LGPD e CDC) ==
+
+O tema inclui implementação discreta de políticas legais:
+
+1. RODAPÉ:
+   - Seção "Informações Legais" com links para políticas
+   - Links em fonte pequena, cor neutra, sem interferir na conversão
+
+2. PÁGINA DO CURSO (single-course.php):
+   - Avisos de segurança próximo ao botão de compra:
+     * "Compra 100% segura (LGPD)" com link para política de privacidade
+     * "Garantia de 7 dias (CDC)" com link para política de troca
+   - Ícones discretos mas visíveis
+
+3. PÁGINAS DE POLÍTICAS:
+   - Conteúdo completo em conformidade com a lei
+   - Design limpo e legível
+   - Fácil navegação
+
+Para conformidade total, considere adicionar:
+- Banner de cookies (plugin recomendado: GDPR Cookie Consent)
+- Checkbox de aceite nos formulários de contato/checkout
 
 == Custom Post Types ==
 
@@ -139,9 +175,9 @@ O tema possui 5 áreas de widgets:
 == Personalização Avançada ==
 
 MODIFICAR CORES:
-Edite as variáveis CSS no arquivo style.css (linhas 15-40):
---color-primary: #1a365d;
---color-accent: #ff6b35;
+Edite as variáveis CSS no arquivo style.css:
+--primary: 210 100% 20%;
+--accent: 142 76% 36%;
 etc.
 
 ADICIONAR FUNCIONALIDADES:
@@ -162,6 +198,7 @@ Use o arquivo functions.php para adicionar:
 * Yoast SEO (otimização)
 * WP Rocket (cache)
 * Wordfence Security (segurança)
+* GDPR Cookie Consent (conformidade cookies)
 
 == Suporte ==
 
@@ -169,6 +206,13 @@ Para suporte, entre em contato através de:
 Email: contato@cursopro.com
 
 == Changelog ==
+
+= 1.1 =
+* Adicionadas páginas de Política de Privacidade (LGPD)
+* Adicionada página de Política de Troca e Devolução (CDC)
+* Avisos de segurança na página do curso
+* Seção de Informações Legais no rodapé
+* Melhorias no CSS do rodapé
 
 = 1.0 =
 * Lançamento inicial
